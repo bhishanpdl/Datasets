@@ -1,9 +1,13 @@
 Table of Contents
 =================
+   * [NOTE:](#note)
    * [nycflights13](#nycflights13)
    * [Lahman batting data](#lahman-batting-data)
    * [Historical Product Demand](#historical-product-demand)
 
+# NOTE:
+I have a utility code snipets to auto expand dataset link. `u-gh_data` expands to
+'https://raw.githubusercontent.com/bhishanpdl/Datasets/master/'
 
 # nycflights13
 One of the dataset used in book [R for Data Science](https://github.com/hadley/r4ds).
