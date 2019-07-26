@@ -1,5 +1,7 @@
 # [Occupancy Detection Data Set](https://archive.ics.uci.edu/ml/datasets/Occupancy+Detection+#)
 
+[How to Predict Room Occupancy Based on Environmental Factors](https://machinelearningmastery.com/how-to-predict-room-occupancy-based-on-environmental-factors/)
+
 # Attribute Information:
 ```
 date time year-month-day hour:minute:second 
