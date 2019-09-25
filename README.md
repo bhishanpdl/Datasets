@@ -6,8 +6,27 @@ Table of Contents
    * [Statsmodels datasets](#statsmodels-datasets)
 
 # Links to get datasets
-- Kaggle
-- http://www.randomservices.org/random/
+- [Kaggle](https://www.kaggle.com/datasets)
+- [Data gov](https://www.data.gov/)
+- [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
+- [Awesome Public Datasets](https://github.com/awesomedata/awesome-public-datasets)
+- [KDNuggets](http://www.kdnuggets.com/datasets/index.html)
+- [Fivethirtyeight](https://fivethirtyeight.com/)
+- [Buzzfeed](https://www.buzzfeed.com/)
+- [Socrata](https://opendata.socrata.com/)
+- [Quandl](https://www.quandl.com/)
+- [Reddit Datasets Subreddit](https://www.reddit.com/r/datasets/)
+- [Data World](https://data.world/)
+- [World Bank](http://data.worldbank.org/)
+- [Google Bigquery](https://cloud.google.com/bigquery/public-data/)
+- [Youtube](https://research.google.com/youtube8m/)
+- [Analytics Vidhya](https://datahack.analyticsvidhya.com/contest/all/)
+- [MNIST](http://yann.lecun.com/exdb/mnist/)
+- [ImageNet](http://image-net.org/)
+- [Spam – Non Spam](http://www.esp.uem.es/jmgomez/smsspamcorpus/)
+- [Twitter Sentiment Analysis](http://thinknook.com/twitter-sentiment-analysis-training-corpus-dataset-2012-09-22/)
+- [Movie Review Data](http://www.cs.cornell.edu/People/pabo/movie-review-data/)
+- [MovieLens](http://grouplens.org/)
 
 
 # Seaborn datasets
