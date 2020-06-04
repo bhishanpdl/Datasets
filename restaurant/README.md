@@ -1,3 +1,4 @@
+# Description
 Restaurant data from Sheila Tejada sent to me by Nick Kushmerick. 
 
 original/ has the original data. 
@@ -7,3 +8,12 @@ parsed version; will try to find it in archives soon.
 
 The dataset with the phone numbers is too easy; only matching without
 phone numbers makes the dataset useful for comparing algorithms. 
+
+# Source
+- https://www.cs.utexas.edu/users/ml/riddle/data.html
+
+# Usecases
+Removing duplicates using modules:
+- dedupe
+- record_linkage
+- pandas-dedupe
