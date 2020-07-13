@@ -89,6 +89,25 @@ for fname in fnames:
 ```python
 import statsmodels.api as sm
 
+# built-in datasets
+excludes = ['PytestTester', 'test', 'utils','webuse',
+            'get_data_home', 'get_rdataset','check_internet','clear_data_home',]
+fnames = [i for i in dir(sm.datasets) if i[0]!='_' if i not in excludes ]
+print(fnames)
+# ['anes96', 'cancer', 'ccard', 'china_smoking', 'co2', 'committee',
+# 'copper', 'cpunish', 'elnino', 'engel', 'fair', 'fertility', 'grunfeld',
+# 'heart', 'interest_inflation', 'longley', 'macrodata', 'modechoice', 'nile',
+# 'randhie', 'scotland', 'spector', 'stackloss', 'star98', 'statecrime', 'strikes', 'sunspots']
+
+for fname in fnames:
+    print()
+    print(fname)
+    df = getattr(sm.datasets,fname).load_pandas().data
+    display(df.head(2))
+    
+**
+import statsmodels.api as sm
+
 ## built-ins
 co2 = sm.datasets.co2  # time series data for co2
 print(co2.DESCRLONG)
