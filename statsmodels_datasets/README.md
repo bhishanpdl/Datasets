@@ -23,8 +23,9 @@ for fname in fnames:
 Statsmodels provides access to 1173 datasets from the [Rdatasets project](https://github.com/vincentarelbundock/Rdatasets).
 
 ```python
-iris = sm.datasets.get_rdataset('iris').data
+df_iris = sm.datasets.get_rdataset('iris').data
 dataset_iris = sm.datasets.get_rdataset(dataname='iris', package='datasets')
+print(dataset_iris.title) # "Edgar Anderson's Iris Data"
 print(dataset_iris.__doc__)
 ```
 
