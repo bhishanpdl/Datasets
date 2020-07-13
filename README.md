@@ -60,6 +60,29 @@ df = dic_data['frame']
 df_X = dic_data['data']
 ser_y = dic_data['target']
 dic_data['target_names'] # numpy array
+
+
+
+from sklearn import datasets
+
+fnames_and_others = [ i for i in dir(datasets) if 'load_' in i]
+fnames = ['load_boston', 'load_breast_cancer', 'load_diabetes',
+          'load_digits', 'load_iris', 'load_wine']
+print(fnames)
+
+fname = 'load_boston'
+loader = getattr(datasets,fname)()
+df = pd.DataFrame(loader['data'],columns= loader['feature_names'])
+df['target'] = loader['target']
+df.head(2)
+
+for fname in fnames:
+    print()
+    print(fname)
+    loader = getattr(datasets,fname)()
+    df = pd.DataFrame(loader['data'],columns= loader['feature_names'])
+    df['target'] = loader['target']
+    display(df.head(2))
 ```
 
 # Statsmodels datasets
