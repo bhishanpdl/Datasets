@@ -61,8 +61,7 @@ df_X = dic_data['data']
 ser_y = dic_data['target']
 dic_data['target_names'] # numpy array
 
-
-
+**
 from sklearn import datasets
 
 fnames_and_others = [ i for i in dir(datasets) if 'load_' in i]
@@ -139,8 +138,9 @@ df.index = pd.to_datetime(df.index,format='%Y%m%d')
 df.co2.sum(), df2.co2.bfill().sum()
 
 ## using rdataset
-iris = sm.datasets.get_rdataset('iris').data
+df_iris = sm.datasets.get_rdataset('iris').data
 dataset_iris = sm.datasets.get_rdataset(dataname='iris', package='datasets')
+print(dataset_iris.title) # "Edgar Anderson's Iris Data"
 print(dataset_iris.__doc__)
 ```
 Statsmodels provides access to 1173 datasets from the [Rdatasets project](https://github.com/vincentarelbundock/Rdatasets).
