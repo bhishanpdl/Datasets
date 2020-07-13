@@ -52,6 +52,14 @@ print(fnames)
 iris = datasets.load_iris()
 iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
 print(datasets.load_iris().DESCR)
+
+X,y = datasets.load_iris(return_X_y=True) # numpy arrays
+dic_data = datasets.load_iris(as_frame=True)
+print(dic_data.keys())
+df = dic_data['frame']
+df_X = dic_data['data']
+ser_y = dic_data['target']
+dic_data['target_names'] # numpy array
 ```
 
 # Statsmodels datasets
