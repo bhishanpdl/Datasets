@@ -41,20 +41,17 @@ print(sns.get_dataset_names())
 
 # sklearn datasets
 ```python
-from sklearn import datasets # sklearn.datasets does not work
-iris = datasets.load_iris() 
-print(datasets.load_iris().DESCR)
-'''
-attributes:
-dir(datasets.load_iris()) ==> .data .feature_names .target .target_names .filename .DESCR
-'''
+from sklearn import datasets
+
+fnames = [ i for i in dir(datasets) if 'load_' in i]
+print(fnames)
+# 'load_boston', 'load_breast_cancer','load_diabetes', 'load_digits', 'load_files'
+# 'load_iris', 'load_linnerud','load_mlcomp','load_sample_image','load_sample_images',
+# 'load_svmlight_file', 'load_svmlight_files', 'load_wine'
+
+iris = datasets.load_iris()
 iris_df = pd.DataFrame(iris.data, columns=iris.feature_names)
-
-[ i for i in dir(datasets) if 'load_' in i]
-
-'load_boston', 'load_breast_cancer','load_diabetes', 'load_digits', 'load_files'
-'load_iris', 'load_linnerud','load_mlcomp','load_sample_image','load_sample_images',
-'load_svmlight_file', 'load_svmlight_files', 'load_wine'
+print(datasets.load_iris().DESCR)
 ```
 
 # Statsmodels datasets
