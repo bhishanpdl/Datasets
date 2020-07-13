@@ -6,6 +6,12 @@ iris = sns.load_dataset('iris')
 print(sns.get_dataset_names())
 'anscombe', 'attention', 'brain_networks', 'car_crashes', 'diamonds', 'dots', 'exercise', 'flights', 'fmri', 
 'gammas', 'iris', 'mpg', 'planets', 'tips', 'titanic'
+
+for fname in sns.get_dataset_names():
+    print()
+    print('Dataset: ', fname)
+    df = sns.load_dataset(fname)
+    display(df.head().style.hide_index())
 ```
 
 # Datasets
