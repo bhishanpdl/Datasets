@@ -14,7 +14,7 @@ display(df.head(2).append(df.tail(2)))
 ```
 
 # Reading tar data from stanford
-``
+```bash
 Files:
 folder: aclImdb
 files: 
