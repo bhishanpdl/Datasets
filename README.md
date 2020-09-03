@@ -172,3 +172,11 @@ Also, it has following built in datasets:
 - statecrime: [Statewide Crime Data 2009](http://www.statsmodels.org/dev/datasets/generated/statecrime.html)
 - strikes: [U.S. Strike Duration Data](http://www.statsmodels.org/dev/datasets/generated/strikes.html)
 - sunspots: [Yearly sunspots data 1700-2008](http://www.statsmodels.org/dev/datasets/generated/sunspots.html)
+
+# Reading datasets
+```python
+ifile = "https://github.com/bhishanpdl/Datasets/blob/master/Kaggle/IMDB/imdb.zip?raw=true"
+df = pd.read_csv(ifile,compression='zip')
+print(f"df {df.shape}")
+display(df.head(2).append(df.tail(2)))
+```
