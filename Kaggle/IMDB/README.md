@@ -14,6 +14,48 @@ display(df.head(2).append(df.tail(2)))
 ```
 
 # Reading tar data from stanford
+``
+Files:
+folder: aclImdb
+files: 
+imdbEr.txt
+imdb.vocab
+README
+
+subfolders:
+test
+train
+
+files inside train:
+labeledBow.feat
+unsupBow.feat
+urls_neg.txt
+urls_pos.txt
+urls_unsup.txt
+
+subfolders:
+neg
+pos
+unsup
+
+Command: ls aclImdb/train/pos/ | head
+0_9.txt
+10000_8.txt
+10001_10.txt
+
+Command: ls aclImdb/train/neg/ | head
+0_3.txt
+10000_4.txt
+10001_4.txt
+
+Command:
+head -2 aclImdb/train/neg/0_3.txt
+
+Story of a man who has unnatural feelings for a pig. Starts out with a opening scene that is a terrific example of absurd comedy. A formal orchestra audience is turned into an insane, violent mob by the crazy chantings of it's singers. Unfortunately it stays absurd the WHOLE time with no general narrative eventually making it just too off putting. Even those from the era should be turned off. The cryptic dialogue would make Shakespeare seem easy to a third grader. On a technical level it's better than you might think with some good cinematography by future great Vilmos Zsigmond. Future stars Sally Kirkland and Frederic Forrest can be seen briefly.
+```
+
+
+
 ```python
 import requests
 
