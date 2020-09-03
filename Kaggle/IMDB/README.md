@@ -98,3 +98,11 @@ X_test, y_test = populate('test')
 print(len(X_train))
 print(len(X_test))
 ```
+
+# Reading imdb data directly from keras.datasets
+Ref: https://www.kaggle.com/pranavanand24/applied-deep-learning-nn-cnn-rnn
+```python
+from keras.datasets import imdb
+
+(train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
+```
