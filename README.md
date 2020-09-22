@@ -13,6 +13,7 @@ Table of Contents
 - [Data World](https://data.world/)
 - [e for Excel](http://eforexcel.com/wp/downloads-18-sample-csv-files-data-sets-for-testing-sales/) Real finance data
 - [Fivethirtyeight](https://fivethirtyeight.com/)
+- [Google Dataset Search](https://datasetsearch.research.google.com/)
 - [Google Bigquery](https://cloud.google.com/bigquery/public-data/)
 - [ImageNet](http://image-net.org/)
 - [Kaggle](https://www.kaggle.com/datasets)
@@ -20,6 +21,7 @@ Table of Contents
 - [MNIST](http://yann.lecun.com/exdb/mnist/)
 - [MovieLens](http://grouplens.org/)
 - [Movie Review Data](http://www.cs.cornell.edu/People/pabo/movie-review-data/)
+- [OpenML](https://www.openml.org/home)
 - [Quandl](https://www.quandl.com/)
 - [Reddit Datasets Subreddit](https://www.reddit.com/r/datasets/)
 - [Socrata](https://opendata.socrata.com/)
