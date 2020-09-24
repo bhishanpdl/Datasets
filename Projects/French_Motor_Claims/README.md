@@ -1,6 +1,9 @@
 # French Motor Claims
-Ref: https://www.kaggle.com/btw78jt/french-motor-claims-model-comparisons/#data  
-Ref: https://www.openml.org/d/41214
+Data source:
+- [data without claim amount from openml](https://www.openml.org/d/41214)
+- [data without claim amount from kaggle](https://www.kaggle.com/btw78jt/french-motor-claims-model-comparisons/#data)
+- [data only claim amount and id openml](https://www.openml.org/d/41215)
+
 
 # Code
 ```python
@@ -17,6 +20,7 @@ df.head(2).append(df.tail(2)).append(df.dtypes,ignore_index=True)
 # Data
 ![](images/desc_01.png)
 ![](images/desc_02.png)
+![](images/desc_03.png)
 
 # Context
 In the dataset freMTPL2freq risk features and claim numbers were collected for 677,991 motor third-part liability policies (observed on a year).
