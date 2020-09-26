@@ -146,6 +146,19 @@ dataset_iris = sm.datasets.get_rdataset(dataname='iris', package='datasets')
 print(dataset_iris.title) # "Edgar Anderson's Iris Data"
 print(dataset_iris.__doc__)
 ```
+
+Sometimes we need to get R dataset from specific library. Then google that dataset and find the host site. 
+Then use wget to download the data.
+Example auto insurance premium modelling tweedie
+- https://towardsdatascience.com/insurance-risk-pricing-tweedie-approach-1d71207268fc
+- https://gist.github.com/ajaytiwari-isb/dd78b382c44d69332574c381e016af2a#file-tweedie-regression-ipynb
+
+```python
+
+!wget http://www.businessandeconomics.mq.edu.au/__data/assets/file/0011/232310/car.csv
+df = pd.read_csv("car.csv")
+```
+
 Statsmodels provides access to 1173 datasets from the [Rdatasets project](https://github.com/vincentarelbundock/Rdatasets).
 Also, it has following built in datasets:
 - anes96:  [American National Election Survey 1996](http://www.statsmodels.org/dev/datasets/generated/anes96.html)
