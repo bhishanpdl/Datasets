@@ -35,6 +35,9 @@ Table of Contents
 - [Mockaroo realistic data generator](https://mockaroo.com/)
 
 
+# Read and download datasets
+- [neptune.ai: How to Deal with Files in Google Colab: Everything You Need to Know](https://neptune.ai/blog/google-colab-dealing-with-files)
+
 # Seaborn datasets
 ```python
 import seaborn as sns

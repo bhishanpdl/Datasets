@@ -11,8 +11,6 @@ date columns = 2015-07-01, 2015-07-02, ..., 2016-12-31 (550 columns)
 
 file size: 284.6 MB
 
-
-
 Date columns:
 ------------------
 Jul/2015 - 31 days
@@ -38,3 +36,33 @@ The second stage will use training data up until September 1st, 2017. The final 
 For each time series, you are provided the name of the article as well as the type of traffic that this time series represent (all, mobile, desktop, spider). You may use this metadata and any other publicly available data to make predictions. Unfortunately, the data source for this dataset does not distinguish between traffic values of zero and missing values. A missing value may mean the traffic was zero or that the data is not available for that day.
 
 To reduce the submission file size, each page and date combination has been given a shorter Id. The mapping between page names and the submission Id is given in the key files.
+
+# Read the dataset
+```bash
+%%bash
+cd ../data/
+rm -rf train_1.csv
+
+# download the data
+wget https://github.com/bhishanpdl/Datasets/blob/master/Projects/Web_Traffic_Timeseries_Forecast/raw/train_1_01?raw=true > /dev/null 2>&1
+
+wget https://github.com/bhishanpdl/Datasets/blob/master/Projects/Web_Traffic_Timeseries_Forecast/raw/train_1_02?raw=true > /dev/null 2>&1
+
+wget https://github.com/bhishanpdl/Datasets/blob/master/Projects/Web_Traffic_Timeseries_Forecast/raw/train_1_03?raw=true > /dev/null 2>&1
+
+cat train_1_01?raw=true train_1_02?raw=true train_1_03?raw=true > train_1.csv.zip
+# unzip train_1.csv.zip
+# I dont have to delete zip file, it is ignored by github
+
+echo ""
+echo ""
+ls
+cd -
+```
+
+```python
+train = pd.read_csv('../data/train_1.csv.zip',compression='zip')
+print(train.shape)
+
+display(train.head())
+```
