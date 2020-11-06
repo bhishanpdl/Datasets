@@ -112,7 +112,7 @@ for fname in fnames:
     print(fname)
     df = getattr(sm.datasets,fname).load_pandas().data
     display(df.head(2))
-    
+
 **
 import statsmodels.api as sm
 
@@ -131,7 +131,7 @@ co2.data.values # numpy array from pandad dataframe
 
 **
 ## dataframe from numpy records object
-## NOTE: Compare the dataframe with the one directly 
+## NOTE: Compare the dataframe with the one directly
 ##       downloaded from below link:
 ## https://raw.githubusercontent.com/statsmodels/statsmodels/master/statsmodels/datasets/co2/co2.csv
 ##
@@ -200,4 +200,13 @@ ifile = "https://github.com/bhishanpdl/Datasets/blob/master/Kaggle/IMDB/imdb.zip
 df = pd.read_csv(ifile,compression='zip')
 print(f"df {df.shape}")
 display(df.head(2).append(df.tail(2)))
+```
+
+# Read zipfile
+```python
+from zipfile import ZipFile
+import pandas as pd
+
+zf = ZipFile("z_f.zip")
+df_lst = [http://pd.read_csv(https://t.co/8dJA0i8dng(fle.filename)) for fle in zf.infolist() if fle.filename.endswith(".csv")]
 ```
