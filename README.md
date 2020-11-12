@@ -30,6 +30,10 @@ Table of Contents
 - [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php)
 - [World Bank](http://data.worldbank.org/)
 - [Youtube](https://research.google.com/youtube8m/)
+- [data is plural: intersting data](https://github.com/data-is-plural/newsletter-archive)
+- [Lionbridge: The Ultimate Dataset Library for Machine Learning](https://lionbridge.ai/datasets/ultimate-dataset-aggregator-for-machine-learning/)
+- [datasciencedojo: 30 Data Sets to Uplift your Skills in Data Science](https://blog.datasciencedojo.com/30-datasets-to-uplift-your-skills-in-data-science/)
+
 
 # Create Realistic Data
 - [Mockaroo realistic data generator](https://mockaroo.com/)
@@ -210,3 +214,6 @@ import pandas as pd
 zf = ZipFile("z_f.zip")
 df_lst = [http://pd.read_csv(https://t.co/8dJA0i8dng(fle.filename)) for fle in zf.infolist() if fle.filename.endswith(".csv")]
 ```
+
+# [UCI Most popular datasets](http://archive.ics.uci.edu/ml/index.php)
+![](images/uci_most_popular.png)
