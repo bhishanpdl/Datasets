@@ -47,3 +47,13 @@ insult = 0
 identity_hate = 0
 
 ```
+
+# Colab
+```bash
+%%capture
+!wget https://github.com/bhishanpdl/Datasets/blob/master/Projects/Jigsaw_Toxic_Comment_Classification/train.csv.zip?raw=true
+!unzip train.csv.zip?raw=true
+
+!wget https://github.com/bhishanpdl/Datasets/blob/master/Projects/Jigsaw_Toxic_Comment_Classification/test.csv.zip?raw=true
+!unzip test.csv.zip?raw=true
+```
