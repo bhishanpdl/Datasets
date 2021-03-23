@@ -206,14 +206,6 @@ print(f"df {df.shape}")
 display(df.head(2).append(df.tail(2)))
 ```
 
-# Read zipfile
-```python
-from zipfile import ZipFile
-import pandas as pd
-
-zf = ZipFile("z_f.zip")
-df_lst = [http://pd.read_csv(https://t.co/8dJA0i8dng(fle.filename)) for fle in zf.infolist() if fle.filename.endswith(".csv")]
-```
 
 # [UCI Most popular datasets](http://archive.ics.uci.edu/ml/index.php)
 ![](images/uci_most_popular.png)
