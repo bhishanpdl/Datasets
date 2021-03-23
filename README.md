@@ -131,7 +131,7 @@ co2.names # ('date', 'co2')
 co2.data # pandas dataframe
 co2.raw_data # numpy rec array without names
 co2.values() # numpy rec array with names
-co2.data.values # numpy array from pandad dataframe
+co2.data.values # numpy array from pandas dataframe
 
 **
 ## dataframe from numpy records object
