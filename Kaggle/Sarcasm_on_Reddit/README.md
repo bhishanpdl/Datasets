@@ -1,0 +1,1 @@
+https://www.kaggle.com/danofer/sarcasm?select=train-balanced-sarc.csv.gz
