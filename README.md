@@ -38,9 +38,41 @@ Table of Contents
 # Create Realistic Data
 - [Mockaroo realistic data generator](https://mockaroo.com/)
 
-
 # Read and download datasets
 - [neptune.ai: How to Deal with Files in Google Colab: Everything You Need to Know](https://neptune.ai/blog/google-colab-dealing-with-files)
+
+# Read data from url
+```python
+def get_url_data(url,n=0):
+    from urllib.request import Request, urlopen
+    from bs4 import BeautifulSoup
+
+    req = Request(url, headers={'User-Agent': 'Mozilla/5.0'})
+    page = urlopen(req).read()
+
+    soup = BeautifulSoup(page, 'lxml')
+    table = soup.find_all('table')
+    df_ = pd.read_html(str(table))[n]
+    return df_
+
+url = 'https://gasprices.aaa.com/state-gas-price-averages/'
+gas = get_url_data(url)
+gas.head(2)
+```
+
+Method 02: **I Got SSL Error**
+```python
+import pandas as pd
+import requests
+
+url = "https://worldpopulationreview.com/countries/countries-by-gdp/#worldCountries"
+
+r = requests.get(url)
+df_list = pd.read_html(r.text) # this parses all the tables in webpages to a list
+df = df_list[0]
+df.head()
+```
+
 
 # Seaborn datasets
 ```python
